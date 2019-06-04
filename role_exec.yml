@@ -1,0 +1,5 @@
+---
+- hosts: tweetgp
+    roles:
+    - tweet
+

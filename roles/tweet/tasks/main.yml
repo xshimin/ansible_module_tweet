@@ -1,0 +1,24 @@
+# tweet
+# roles/tasks/main.yml
+---
+- name: tweet
+  tweet:
+    consumer_key: "{{ consumer_key }}"
+    consumer_secret: "{{ consumer_secret }}"
+    access_token_key: "{{ access_token_key }}"
+    access_token_secret: "{{ access_token_secret }}"
+    tweet_msg: "TEST TWEET by My Ansible Module"
+  environment:
+    PATH: "{{ user_path }}"
+  register: tweet_result
+  when: user_path is defined
+
+- name: tweet
+  tweet:
+    consumer_key: "{{ consumer_key }}"
+    consumer_secret: "{{ consumer_secret }}"
+    access_token_key: "{{ access_token_key }}"
+    access_token_secret: "{{ access_token_secret }}"
+    tweet_msg: "TEST TWEET by My Ansible Module"
+  register: tweet_result
+  when: user_path is not defined

@@ -1,0 +1,12 @@
+ansible_host: "xxx.xxx.xxx.xxx"
+ansible_user: "username"
+ansible_password: "password"
+
+# My Access Token
+consumer_key: "xxxxxxxxxxxxxxx"
+consumer_secret: "xxxxxxxxxxxxxxxxx"
+access_token_key: "xxxxxxxxxxxxxxxxxxxx"
+access_token_secret: "xxxxxxxxxxxxxxxxxxx"
+
+# ansible_user's PATH for pyenv if needed
+user_path: "xxxxxx"
